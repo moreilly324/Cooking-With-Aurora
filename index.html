@@ -10,24 +10,45 @@
 		<!-- external CSS link -->
 		<link rel="stylesheet" href="css/reset.css">
 		<link rel="stylesheet" href="css/style.css">
+		 <script
+		    src="https://code.jquery.com/jquery-3.2.1.min.js"
+		    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+		    crossorigin="anonymous">
+		  </script>
+		 <script src="js/script.js"></script>
 	</head>
 	<body>
 		<header class="header">
 			<div class="container">
-				<h1>Aurora's Simple Family Recipes</h1>
-				<img src="images/Aurora.jpg" height="200" width="150">
-				<p>Learn how to cook delicious, homemade recipes in no time</p>
+				<h1>Aurora's Family Recipes</h1>
+				<img src="images/Aurora.jpg" height="170" width="120">
+				<p>Learn how to cook delectable, wholesome, and authentic recipes in a straightforward and simple fashion</p>
 			</div>
 		</header>
+		<form>
+			<label for="sub-list" for="subscribe">Need ideas for dinner? Subscribe today! </label>
+			<input id="sub-list" type="email" name="sub-list" value="Your e-mail address" />
+			<input id="subscribe" type="submit" name="subscribe" value="SUBSCRIBE" />
+		</form>
 		<section id="page-header">
 			<div class="container">
 				<p><a href="index.html">Home</a></p>
 				<nav>
 					<ul>
+						<li><div class="line"></div><div class="line"></div><div class="line"></div></li>
 						<li><a href="pasta.html">Pasta</a></li>
-						<li><a href="chicken.html">Chicken</a></li>
+						<li class="dropmenu"><a href="chicken.html">Chicken</a></li>
+							<ul class="submenu">
+								<li><a href="fried.html">Fried</a></li>
+								<li><a href="grilled.html">Grilled</a></li>
+							</ul>
 						<li><a href="fish.html">Fish</a></li>
-						<li><a href="miscellaneous.html">Miscellaneous</a></li>
+						<li class="dropmenu"><a href="othermeats.html">Other Meats</a></li>
+							<ul class="submenu">
+								<li><a href="beef.html">Beef</a></li>
+								<li><a href="veal.html">Veal</a></li>
+							</ul>
+						<li><a href="desserts.html">Desserts</a></li>
 						<li><a href="about.html">About</a></li>
 					</ul>
 				</nav>
@@ -39,13 +60,13 @@
 					<article>
 						<h1>Featured Signature Dishes</h1>
 						<h2><a href="#">Chicken Pamigiana</a></h2>
-						<img src="http://assets.bonappetit.com/photos/57b0b3db1b33404414976404/16:9/w_1000,c_limit/mare_chicken_parmesan_h.jpg">
+						<img src="http://assets.bonappetit.com/photos/57b0b3db1b33404414976404/16:9/w_1000,c_limit/mare_chicken_parmesan_h.jpg" height="75%" width="75%">
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur non arcu lobortis, fringilla ex at, dictum sem. Sed sit amet turpis eu mi tempus viverra vitae vel diam. Mauris eget blandit mauris. Vestibulum lacinia orci sit amet lorem blandit, at eleifend tortor lobortis. Pellentesque enim ipsum, ultrices non lectus eget, euismod luctus purus. Duis vel metus id est dapibus interdum vestibulum faucibus augue. Nulla eu dui aliquet, pulvinar ante egestas, tincidunt tellus</p>
 						<button class="clicktoarticle">Read More</button>
 					</article>
 					<article>
 						<h2><a href="#">Teriyaki Glazed Salmon</a></h2>
-						<img src="https://www.onceuponachef.com/images/2011/10/Thai-Chili-Glazed-Salmon-1-1024x699-1-1024x699.jpg" height="280" width="630">
+						<img src="https://www.onceuponachef.com/images/2011/10/Thai-Chili-Glazed-Salmon-1-1024x699-1-1024x699.jpg" height="75%" width="75%">
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur non arcu lobortis, fringilla ex at, dictum sem. Sed sit amet turpis eu mi tempus viverra vitae vel diam. Mauris eget blandit mauris. Vestibulum lacinia orci sit amet lorem blandit, at eleifend tortor lobortis. Pellentesque enim ipsum, ultrices non lectus eget, euismod luctus purus. Duis vel metus id est dapibus interdum vestibulum faucibus augue. Nulla eu dui aliquet, pulvinar ante egestas, tincidunt tellus</p>
 						<button class="clicktoarticle">Read More</button>
 					</article>
@@ -65,7 +86,7 @@
 							<li>Step 5</li>
 						</ol>
 					</article>
-					<article>
+					<article class="hide">
 						<h3>Chicken Pesto Pasta</h3>
 						<img src="http://15383-presscdn-0-4.pagely.netdna-cdn.com/wp-content/uploads/2015/04/Chicken-Pesto-Pasta-017.jpg" height="40%" width="60%">
 						<ol>
@@ -78,14 +99,17 @@
 					</article>
 				</aside>
 			</div>
-		</section>	
+		</section>
+		<form>
+			
+		</form>	
 		<section>
 			<blockquote id="references">
 				<p>"Aurora is from Pellentesque enim ipsum, ultrices non lectus eget, euismod luctus purus. Duis vel metus id est dapibus interdum vestibulum faucibus augue. Nulla eu dui aliquet, pulvinar ante egestas, tincidunt tellus"</p>
 			</blockquote>
 		</section>
 		<footer id="footer">
-			<h1>Cooking with Aurora</h1>
+			<h1>Aurora's Simple Family Recipes</h1>
 			<h3>Meet the Creators</h3>
 			<p id="Matt">Matt is  _____________________</p>
 			<p id="Aurora">Aurora is ___________________</p>

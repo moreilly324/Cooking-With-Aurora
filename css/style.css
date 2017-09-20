@@ -1,7 +1,7 @@
 /*
-Project Name: Blank Template
-Client: Your Client
-Author: Your Name
+Project Name: Aurora's Simple Recipes
+Client: Me
+Author: Matthew O'Reilly
 Developer @GA in NYC
 */
 
@@ -10,14 +10,12 @@ Developer @GA in NYC
 /* SETUP
 /*******************************************/
 
-/* Box Model Hack */
 * {
   -moz-box-sizing: border-box; /* Firexfox */
   -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
   box-sizing: border-box; /* IE */
 }
 
-/* Clear fix hack */
 .clearfix:after {
   content: ".";
   display: block;
@@ -72,17 +70,19 @@ a {
 
 .header{
   background: url(../images/header2.jpg);
-  height: 350px;
+  height: 270px;
   background-position: 50% 80%;
   background-size: cover;
   opacity: .75;
-  border-bottom: 7px solid white;
+  border-bottom: 4px solid white;
   text-align: center;
 }
-
+.mobile{
+  display: none;
+}
 header div h1{
   color: white;
-  font-size: 2em;
+  font-size: 1.9em;
   font-weight: 800;
   font-style: italic;
   font-kerning: auto;
@@ -92,47 +92,97 @@ header div h1{
 header img{
   border-radius: 50%;
   opacity: 1;
-  margin-top: 10px
+  margin-top: -5px
 }
 
 header p{
+  font-size: .85em;
   color: white;
   font-weight: 800;
   font-style: italic;
-  margin-top: 10px;
+  margin-top: -8px;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+form{
+  text-align: center;
+  background: #676;
+  border-bottom: 3px solid white;
+  padding-bottom: 6px;
+  padding-top: 4px;
+}
+
+form label{
+  color: white;
+  text-align: bottom;
+  line-height: 1;
+  font-weight: 800;
+  padding-right: 22px;
+  margin: 0;
+  box-sizing: normal;
+  width: 50%;
+  height: 50px;
+}
+
+#sub-list{
+  width: 20%;
+  font-style: italic;
+  font-weight: lighter;
+  color: gray;
+}
+
+#subscribe{
+  background: maroon;
+  color: white;
+  height: 30px;
+  width: 12%;
+  font-weight: 800;
+  font-size: .5em;
+}
+
+#subscribe:hover{
+  background:white;
+  color:red;
+  cursor: pointer;
 }
 
 #page-header {
   background: black;
   color: white;
   overflow: hidden;
-  border-bottom: 3px solid white;
-  padding: 10px;
-  font-size: .65em
+  border-bottom: 4px solid white;
 }
 #page-header a {
   color: inherit;
   text-decoration: none;
+  font-size: .65em
 }
 #page-header p {
   float: left;
+  width: 20%;
   color: white;
-  margin: 20px 0 0 0;
-  margin-left: 90px;
+  margin-left: 5%;
+  padding-top: .25%
+
 }
 #page-header p:hover{
   color: beige;
 }
 #page-header nav {
   float: right;
+  width: 70%;
+  padding-left: 24%;
+  text-align: center;
 }
 #page-header nav li {
   float: left;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  padding-left: 3%;
+  padding-right: 3%;
 }
-#page-header nav a {
+#page-header nav li a {
   display: block;
-  padding: 20px 40px;
   color: white;
 }
 #page-header nav ul li a:hover{
@@ -261,4 +311,118 @@ footer #Aurora{
   color: white;
 }
 
+@media screen and (max-width: 1270px) and (min-width: 1000px){
+
+#page-header a {
+  font-size: .60em
+}
+
+#page-header nav {;
+  padding-left: 15%;
+}
+}
+
+@media screen and (max-width: 1000px) and (min-width: 768px){
+
+#page-header a {
+  font-size: .55em
+}
+
+#page-header nav {;
+  padding-left: 7%;
+}
+header p{
+  font-size: .6em;
+}
+}
+
+@media screen and (max-width: 768px){
+
+.header{
+  height: 250px;
+  background-position: 50% 80%;
+}
+
+header div h1{
+  font-size: 1.3em;
+  margin-top: -7px;
+}
+
+header img{
+  margin-top: -9px;
+}
+
+header p{
+  font-size: .6em;
+  margin-top: -9px;
+}
+
+form label{
+  font-size: 70%;
+}
+
+#page-header {
+  font-size: .55em
+}
+
+
+#subscribe{
+  width: 70%;
+  font-size:70%;
+}
+#main{
+  height: 1350px;
+}
+#posts {
+  width: 100%;
+  border-bottom: 3px black;
+  padding-bottom: 15px;
+}
+#side {
+  width: 100%;
+  border-left: none;
+}
+.hide{
+  display: none;
+}
+article h1{
+  padding-bottom: 10px;
+  font-size: .85em;
+  padding-left: 33%;
+}
+article h2{
+  font-size: .8em;
+}
+
+article img{
+  padding-left: 14%;
+}
+
+article p{
+  display: none;
+}
+
+
+article ol li{
+  padding: .5%;
+  font-size: .55em;
+}
+
+aside article img{
+  padding-left: 5%;
+}
+
+aside article h2{
+  padding-left: 40%;
+  font-style: normal;
+}
+
+aside article h3{
+  padding-left: 10%;
+}
+
+aside article img{
+  padding-left: 10%;
+}
+}
 
