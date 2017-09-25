@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<meta charset="utf-8">
+    	<meta name="Aurora's Simple Family Recipes" content="Learn how to cook delicious, homemade recipes in no time">
+
+		<title>Aurora's Simple Family Recipes</title>
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,300,600,800' rel='stylesheet' type='text/css'>
+
+		<!-- external CSS link -->
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/style.css">
+		 <script
+		    src="https://code.jquery.com/jquery-3.2.1.min.js"
+		    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+		    crossorigin="anonymous">
+		  </script>
+		 <script src="js/script.js"></script>
+	</head>
+	<body>
+		<header class="header">
+			<div class="container">
+				<h1>Aurora's Family Recipes</h1>
+				<img src="images/Aurora.jpg" height="170" width="120">
+				<p>Learn how to cook delectable, wholesome, and authentic recipes in a straightforward and simple fashion</p>
+			</div>
+		</header>
+		<form id="sub-form">
+			<label for="sub-list" for="subscribe">Need ideas for dinner? Subscribe today! </label>
+			<input id="sub-list" type="email" name="sub-list" value="Your e-mail address" />
+			<input id="subscribe" type="submit" name="subscribe" value="SUBSCRIBE" />
+		</form>
+		<section>
+				<nav id="page-header">
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><div class="line"></div><div class="line"></div><div class="line"></div></li>
+						<li><a href="pasta.html">Pasta</a></li>
+						<li class="hover"><a href="chicken.html">Chicken</a>
+							<ul class="dropmenu">
+								<li><a href="fried.html">Fried</a></li>
+								<li><a href="grilled.html">Grilled</a></li>
+							</ul>
+						</li>
+						<li><a href="fish.html">Fish</a></li>
+						<li class="hover"><a href="othermeats.html">Other Meats</a>
+							<ul class="dropmenu">
+								<li><a href="beef.html">  Beef  </a></li>
+								<li><a href="pork.html">  Pork  </a></li>
+							</ul>
+						</li>
+						<li><a href="desserts.html">Desserts</a></li>
+						<li><a href="contact.html">Contact</a></li>
+					</ul>
+				</div>
+				</nav>
+		</section>	
+		<div id="form-container">
+      	<form id="settings-form">
+        <fieldset>
+          <legend>Contact Information</legend>
+
+          <label for="first-name">First Name</label>
+          <input id="first-name" type="text" name="first-name">
+
+          <br>
+
+          <label for="last-name">Last Name</label>
+          <input id="last-name" type="text" name="last-name">
+
+          <br>
+
+          <label for="email">Email</label>
+          <input id="email" type="email" name="email">
+
+          <br>
+
+          <label for="password">Password</label>
+          <input id="password" type="password" name="password">
+
+          <br>
+
+          <label for="dob">Date of Birth</label>
+          <input id="dob" type="date" name="dob">
+
+          <br>
+
+          <label for="phone">Phone Number</label>
+          <input id="phone" type="tel" name="phone">
+
+          <br>
+
+          <label class="gender" for="gender">Gender</label>
+          <br>
+          <ul>
+	         <li><label for="female">Female</label>
+	         <input id="female" type="radio" name="gender" value="female"></li>
+	         <li><label for="male">Male</label>
+	         <input id="male" type="radio" name="gender" value="male"></li>
+	         <li><label for="other">Other</label>
+	         <input id="other" type="radio" name="gender" value="other"></li>
+	         <li><label for="pnti">Prefer not to identify</label>
+	         <input id="pnti" type="radio" name="gender" value="pnti"></li>
+	      </ul>
+
+          <br>
+
+          <label for="reason">Reason for Contacting</label>
+          <input id="reason" type="text" name="reason">
+
+        </fieldset>
+
+        <input type="submit" value="Save Settings">
+      </form>
+    </div>
+		<blockquote id="references">
+			<p>"Aurora is from Pellentesque enim ipsum, ultrices non lectus eget, euismod luctus purus. Duis vel metus id est dapibus interdum vestibulum faucibus augue. Nulla eu dui aliquet, pulvinar ante egestas, tincidunt tellus"</p>
+		</blockquote>
+		</section>
+		<footer id="footer">
+			<h1>Aurora's Simple Family Recipes</h1>
+			<h3>Meet the Creators</h3>
+			<p id="Matt">Matt is  _____________________</p>
+			<p id="Aurora">Aurora is ___________________</p>
+		</footer>
+	</body>
+</html>
